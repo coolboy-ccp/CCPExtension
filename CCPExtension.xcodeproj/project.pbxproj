@@ -16,6 +16,13 @@
 		8B8406C11F01E8AD00358EBD /* NSArray+CCPArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406C01F01E8AD00358EBD /* NSArray+CCPArray.m */; };
 		8B8406C41F01EBB500358EBD /* NSString+CCPString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406C31F01EBB500358EBD /* NSString+CCPString.m */; };
 		8B8406C71F01F61600358EBD /* NSObject+CCPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406C61F01F61600358EBD /* NSObject+CCPObject.m */; };
+		8B8406CA1F02214900358EBD /* NSDictionary+CCPDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406C91F02214900358EBD /* NSDictionary+CCPDictionary.m */; };
+		8B8406CD1F02251600358EBD /* UIImage+CCPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406CC1F02251600358EBD /* UIImage+CCPImage.m */; };
+		8B8406D01F02264800358EBD /* UIButton+CCPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406CF1F02264800358EBD /* UIButton+CCPButton.m */; };
+		8B8406D31F02296C00358EBD /* NSURL+CCPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406D21F02296C00358EBD /* NSURL+CCPURL.m */; };
+		8B8406D61F022A8A00358EBD /* UIColor+CCPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406D51F022A8A00358EBD /* UIColor+CCPColor.m */; };
+		8B8406D91F022B9700358EBD /* UIView+CCPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406D81F022B9700358EBD /* UIView+CCPView.m */; };
+		8B8406DC1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +42,20 @@
 		8B8406C31F01EBB500358EBD /* NSString+CCPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CCPString.m"; sourceTree = "<group>"; };
 		8B8406C51F01F61600358EBD /* NSObject+CCPObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CCPObject.h"; sourceTree = "<group>"; };
 		8B8406C61F01F61600358EBD /* NSObject+CCPObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CCPObject.m"; sourceTree = "<group>"; };
+		8B8406C81F02214900358EBD /* NSDictionary+CCPDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CCPDictionary.h"; sourceTree = "<group>"; };
+		8B8406C91F02214900358EBD /* NSDictionary+CCPDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CCPDictionary.m"; sourceTree = "<group>"; };
+		8B8406CB1F02251600358EBD /* UIImage+CCPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CCPImage.h"; sourceTree = "<group>"; };
+		8B8406CC1F02251600358EBD /* UIImage+CCPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CCPImage.m"; sourceTree = "<group>"; };
+		8B8406CE1F02264800358EBD /* UIButton+CCPButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CCPButton.h"; sourceTree = "<group>"; };
+		8B8406CF1F02264800358EBD /* UIButton+CCPButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CCPButton.m"; sourceTree = "<group>"; };
+		8B8406D11F02296C00358EBD /* NSURL+CCPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+CCPURL.h"; sourceTree = "<group>"; };
+		8B8406D21F02296C00358EBD /* NSURL+CCPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+CCPURL.m"; sourceTree = "<group>"; };
+		8B8406D41F022A8A00358EBD /* UIColor+CCPColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CCPColor.h"; sourceTree = "<group>"; };
+		8B8406D51F022A8A00358EBD /* UIColor+CCPColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CCPColor.m"; sourceTree = "<group>"; };
+		8B8406D71F022B9700358EBD /* UIView+CCPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CCPView.h"; sourceTree = "<group>"; };
+		8B8406D81F022B9700358EBD /* UIView+CCPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCPView.m"; sourceTree = "<group>"; };
+		8B8406DA1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CCPUserDefaults.h"; sourceTree = "<group>"; };
+		8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CCPUserDefaults.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +119,20 @@
 				8B8406C31F01EBB500358EBD /* NSString+CCPString.m */,
 				8B8406C51F01F61600358EBD /* NSObject+CCPObject.h */,
 				8B8406C61F01F61600358EBD /* NSObject+CCPObject.m */,
+				8B8406C81F02214900358EBD /* NSDictionary+CCPDictionary.h */,
+				8B8406C91F02214900358EBD /* NSDictionary+CCPDictionary.m */,
+				8B8406CB1F02251600358EBD /* UIImage+CCPImage.h */,
+				8B8406CC1F02251600358EBD /* UIImage+CCPImage.m */,
+				8B8406CE1F02264800358EBD /* UIButton+CCPButton.h */,
+				8B8406CF1F02264800358EBD /* UIButton+CCPButton.m */,
+				8B8406D11F02296C00358EBD /* NSURL+CCPURL.h */,
+				8B8406D21F02296C00358EBD /* NSURL+CCPURL.m */,
+				8B8406D41F022A8A00358EBD /* UIColor+CCPColor.h */,
+				8B8406D51F022A8A00358EBD /* UIColor+CCPColor.m */,
+				8B8406D71F022B9700358EBD /* UIView+CCPView.h */,
+				8B8406D81F022B9700358EBD /* UIView+CCPView.m */,
+				8B8406DA1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.h */,
+				8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -175,10 +210,17 @@
 			files = (
 				8B8406AF1F01E86800358EBD /* ViewController.m in Sources */,
 				8B8406C11F01E8AD00358EBD /* NSArray+CCPArray.m in Sources */,
+				8B8406D01F02264800358EBD /* UIButton+CCPButton.m in Sources */,
+				8B8406D31F02296C00358EBD /* NSURL+CCPURL.m in Sources */,
+				8B8406CD1F02251600358EBD /* UIImage+CCPImage.m in Sources */,
 				8B8406AC1F01E86800358EBD /* AppDelegate.m in Sources */,
+				8B8406D61F022A8A00358EBD /* UIColor+CCPColor.m in Sources */,
+				8B8406DC1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m in Sources */,
 				8B8406C41F01EBB500358EBD /* NSString+CCPString.m in Sources */,
+				8B8406D91F022B9700358EBD /* UIView+CCPView.m in Sources */,
 				8B8406A91F01E86800358EBD /* main.m in Sources */,
 				8B8406C71F01F61600358EBD /* NSObject+CCPObject.m in Sources */,
+				8B8406CA1F02214900358EBD /* NSDictionary+CCPDictionary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +375,7 @@
 				8B8406BD1F01E86800358EBD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
