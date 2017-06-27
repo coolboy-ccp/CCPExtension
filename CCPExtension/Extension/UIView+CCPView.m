@@ -11,6 +11,92 @@
 
 @implementation UIView (CCPView)
 
+/*----------布局属性---------------*/
+- (void)setX:(CGFloat)x {
+    CGRect rt = self.frame;
+    rt.origin.x = x;
+    self.frame = rt;
+}
+
+- (CGFloat)x {
+    return self.frame.origin.x;
+}
+
+- (void)setY:(CGFloat)y {
+    CGRect rt = self.frame;
+    rt.origin.y = y;
+    self.frame = rt;
+}
+
+- (CGFloat)y {
+    return self.frame.origin.y;
+}
+
+- (void)setH:(CGFloat)h {
+    CGRect rt = self.frame;
+    rt.size.height = h;
+    self.frame = rt;
+}
+
+- (CGFloat)h {
+    return self.bounds.size.height;
+}
+
+- (void)setW:(CGFloat)w {
+    CGRect rt = self.frame;
+    rt.size.width = w;
+    self.frame = rt;
+}
+
+- (CGFloat)w {
+    return self.bounds.size.width;
+}
+
+- (void)setSize:(CGSize)size {
+    CGRect rt = self.frame;
+    rt.size = size;
+    self.frame = rt;
+}
+
+- (CGSize)size {
+    return self.frame.size;
+}
+
+- (void)setPoint:(CGPoint)point {
+    CGRect rt = self.frame;
+    rt.origin = point;
+    self.frame = rt;
+}
+
+- (CGPoint)point {
+    return self.frame.origin;
+}
+
+- (CGFloat)maxX {
+    return CGRectGetMaxX(self.frame);
+}
+
+- (CGFloat)maxY {
+    return CGRectGetMaxY(self.frame);
+}
+
+- (CGFloat)midX {
+    return CGRectGetMidX(self.frame);
+}
+
+- (CGFloat)midY {
+    return CGRectGetMidY(self.frame);
+}
+
+- (CGFloat)minX {
+    return CGRectGetMinX(self.frame);
+}
+
+- (CGFloat)minY {
+    return CGRectGetMinY(self.frame);
+}
+
+/*---------以上为位置信息---------------------*/
 /*
  * 类似于alert的弹出动画
  */
@@ -69,6 +155,29 @@
         next = next.nextResponder;
     }
     return vc;
+}
+
+/*
+ * 完全复制当前view
+ */
+- (__kindof UIView *)copy {
+    NSData *ach = [NSKeyedArchiver archivedDataWithRootObject:self];
+    return [NSKeyedUnarchiver unarchiveObjectWithData:ach];
+}
+
+/*
+ * 获取当前页面截图
+ * frame 截图范围
+ */
+- (UIImage *)renderImgIn:(CGRect)frame {
+    UIGraphicsBeginImageContext(self.bounds.size);
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(ctx);
+    UIRectClip(frame);
+    [self.layer renderInContext:ctx];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return img;
 }
 
 @end

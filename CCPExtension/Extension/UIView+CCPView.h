@@ -10,6 +10,19 @@
 
 @interface UIView (CCPView)
 
+@property (nonatomic, assign) CGFloat x;
+@property (nonatomic, assign) CGFloat y;
+@property (nonatomic, assign) CGFloat w;
+@property (nonatomic, assign) CGFloat h;
+@property (nonatomic, assign) CGSize size;
+@property (nonatomic, assign) CGPoint point;
+@property (nonatomic, assign, readonly) CGFloat maxX;
+@property (nonatomic, assign, readonly) CGFloat maxY;
+@property (nonatomic, assign, readonly) CGFloat midX;
+@property (nonatomic, assign, readonly) CGFloat midY;
+@property (nonatomic, assign, readonly) CGFloat minX;
+@property (nonatomic, assign, readonly) CGFloat minY;
+
 /*
  * 类似于alert的弹出动画
  */
@@ -32,5 +45,14 @@
  * 获取当前视图所在控制器
  */
 - (__kindof UIViewController *)vc;
+/*
+ * 完全复制当前view
+ */
+- (__kindof UIView *)copy;
+/*
+ * 获取当前页面截图
+ * frame 截图范围
+ */
+- (UIImage *)renderImgIn:(CGRect)frame;
 
 @end

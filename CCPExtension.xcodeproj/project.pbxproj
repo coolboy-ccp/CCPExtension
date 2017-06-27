@@ -23,6 +23,9 @@
 		8B8406D61F022A8A00358EBD /* UIColor+CCPColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406D51F022A8A00358EBD /* UIColor+CCPColor.m */; };
 		8B8406D91F022B9700358EBD /* UIView+CCPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406D81F022B9700358EBD /* UIView+CCPView.m */; };
 		8B8406DC1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */; };
+		8BBB52B01F0237FF00CE73BD /* UIViewController+CCPVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB52AF1F0237FF00CE73BD /* UIViewController+CCPVC.m */; };
+		8BBB52B31F02401F00CE73BD /* NSDate+CCPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB52B21F02401F00CE73BD /* NSDate+CCPDate.m */; };
+		8BBB52B61F02418D00CE73BD /* UILabel+CCPLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBB52B51F02418D00CE73BD /* UILabel+CCPLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,12 @@
 		8B8406D81F022B9700358EBD /* UIView+CCPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCPView.m"; sourceTree = "<group>"; };
 		8B8406DA1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+CCPUserDefaults.h"; sourceTree = "<group>"; };
 		8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+CCPUserDefaults.m"; sourceTree = "<group>"; };
+		8BBB52AE1F0237FF00CE73BD /* UIViewController+CCPVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CCPVC.h"; sourceTree = "<group>"; };
+		8BBB52AF1F0237FF00CE73BD /* UIViewController+CCPVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CCPVC.m"; sourceTree = "<group>"; };
+		8BBB52B11F02401F00CE73BD /* NSDate+CCPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CCPDate.h"; sourceTree = "<group>"; };
+		8BBB52B21F02401F00CE73BD /* NSDate+CCPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CCPDate.m"; sourceTree = "<group>"; };
+		8BBB52B41F02418D00CE73BD /* UILabel+CCPLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+CCPLabel.h"; sourceTree = "<group>"; };
+		8BBB52B51F02418D00CE73BD /* UILabel+CCPLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+CCPLabel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +142,12 @@
 				8B8406D81F022B9700358EBD /* UIView+CCPView.m */,
 				8B8406DA1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.h */,
 				8B8406DB1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m */,
+				8BBB52AE1F0237FF00CE73BD /* UIViewController+CCPVC.h */,
+				8BBB52AF1F0237FF00CE73BD /* UIViewController+CCPVC.m */,
+				8BBB52B11F02401F00CE73BD /* NSDate+CCPDate.h */,
+				8BBB52B21F02401F00CE73BD /* NSDate+CCPDate.m */,
+				8BBB52B41F02418D00CE73BD /* UILabel+CCPLabel.h */,
+				8BBB52B51F02418D00CE73BD /* UILabel+CCPLabel.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -216,8 +231,11 @@
 				8B8406AC1F01E86800358EBD /* AppDelegate.m in Sources */,
 				8B8406D61F022A8A00358EBD /* UIColor+CCPColor.m in Sources */,
 				8B8406DC1F0232B200358EBD /* NSUserDefaults+CCPUserDefaults.m in Sources */,
+				8BBB52B31F02401F00CE73BD /* NSDate+CCPDate.m in Sources */,
 				8B8406C41F01EBB500358EBD /* NSString+CCPString.m in Sources */,
 				8B8406D91F022B9700358EBD /* UIView+CCPView.m in Sources */,
+				8BBB52B01F0237FF00CE73BD /* UIViewController+CCPVC.m in Sources */,
+				8BBB52B61F02418D00CE73BD /* UILabel+CCPLabel.m in Sources */,
 				8B8406A91F01E86800358EBD /* main.m in Sources */,
 				8B8406C71F01F61600358EBD /* NSObject+CCPObject.m in Sources */,
 				8B8406CA1F02214900358EBD /* NSDictionary+CCPDictionary.m in Sources */,
