@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7567F61F0394420079F5F5 /* UIWebView+CCPWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7567F51F0394420079F5F5 /* UIWebView+CCPWeb.m */; };
 		8B8406A91F01E86800358EBD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406A81F01E86800358EBD /* main.m */; };
 		8B8406AC1F01E86800358EBD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406AB1F01E86800358EBD /* AppDelegate.m */; };
 		8B8406AF1F01E86800358EBD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8406AE1F01E86800358EBD /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B7567F41F0394420079F5F5 /* UIWebView+CCPWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+CCPWeb.h"; sourceTree = "<group>"; };
+		8B7567F51F0394420079F5F5 /* UIWebView+CCPWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+CCPWeb.m"; sourceTree = "<group>"; };
 		8B8406A41F01E86800358EBD /* CCPExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B8406A81F01E86800358EBD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8B8406AA1F01E86800358EBD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				8BBB52B21F02401F00CE73BD /* NSDate+CCPDate.m */,
 				8BBB52B41F02418D00CE73BD /* UILabel+CCPLabel.h */,
 				8BBB52B51F02418D00CE73BD /* UILabel+CCPLabel.m */,
+				8B7567F41F0394420079F5F5 /* UIWebView+CCPWeb.h */,
+				8B7567F51F0394420079F5F5 /* UIWebView+CCPWeb.m */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -235,6 +240,7 @@
 				8B8406C41F01EBB500358EBD /* NSString+CCPString.m in Sources */,
 				8B8406D91F022B9700358EBD /* UIView+CCPView.m in Sources */,
 				8BBB52B01F0237FF00CE73BD /* UIViewController+CCPVC.m in Sources */,
+				8B7567F61F0394420079F5F5 /* UIWebView+CCPWeb.m in Sources */,
 				8BBB52B61F02418D00CE73BD /* UILabel+CCPLabel.m in Sources */,
 				8B8406A91F01E86800358EBD /* main.m in Sources */,
 				8B8406C71F01F61600358EBD /* NSObject+CCPObject.m in Sources */,
