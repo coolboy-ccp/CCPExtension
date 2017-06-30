@@ -61,4 +61,11 @@
 - (void)txt:(NSString *)name success:(void(^)(NSString *str))sc;
 /*---------main-----------*/
 - (void)main_txt:(NSString *)name success:(void(^)(NSString *str))sc;
+
+/*
+ * 方法交换
+ * os 原方法
+ * ps 交换方法
+ */
+- (void)exchange_method:(SEL)os place:(SEL)ps;
 @end

@@ -9,19 +9,21 @@
 #import "ViewController.h"
 #import "NSArray+CCPArray.h"
 
+
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
++ (void)initialize {
+    NSLog(@"%s",__func__);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *arr = @[@"0",@"0"];
-    NSArray *maparr = [arr map:^id(id value) {
-        return @"1";
-    }];
-    NSLog(@"maparr--%@----arr---%@",maparr,arr);
+    
 }
 
 

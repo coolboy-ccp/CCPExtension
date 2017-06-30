@@ -30,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B74A1451F06322D004C2DA6 /* SomeDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SomeDefines.h; sourceTree = "<group>"; };
 		8B7567F41F0394420079F5F5 /* UIWebView+CCPWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+CCPWeb.h"; sourceTree = "<group>"; };
 		8B7567F51F0394420079F5F5 /* UIWebView+CCPWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+CCPWeb.m"; sourceTree = "<group>"; };
 		8B8406A41F01E86800358EBD /* CCPExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCPExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,6 +154,7 @@
 				8BBB52B51F02418D00CE73BD /* UILabel+CCPLabel.m */,
 				8B7567F41F0394420079F5F5 /* UIWebView+CCPWeb.h */,
 				8B7567F51F0394420079F5F5 /* UIWebView+CCPWeb.m */,
+				8B74A1451F06322D004C2DA6 /* SomeDefines.h */,
 			);
 			path = Extension;
 			sourceTree = "<group>";

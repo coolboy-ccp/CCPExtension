@@ -191,6 +191,28 @@
 }
 
 
+/*
+ * 方法交换
+ * os 原方法
+ * ps 交换方法
+ */
+- (void)exchange_method:(SEL)os place:(SEL)ps {
+    Method om = class_getInstanceMethod([self class], os);
+    Method pm = class_getInstanceMethod([self class], ps);
+    //下面是为了判断当前类是否已经存在os这个方法
+    //如果存在addM为NO,反之返回YES
+    BOOL addM = class_addMethod([self class], os, method_getImplementation(pm), method_getTypeEncoding(pm));
+    if (addM) {
+        //addM为yes 表示添加了一个名为os,IMP 为pm的方法
+        //用ps替代os
+        class_replaceMethod([self class], ps, method_getImplementation(om), method_getTypeEncoding(om));
+    }
+    else {
+        //add为no,
+        //ps和os交换实现
+        method_exchangeImplementations(om, pm);
+    }
+}
 
 
 @end

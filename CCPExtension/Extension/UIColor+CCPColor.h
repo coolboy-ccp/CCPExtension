@@ -15,4 +15,8 @@
  * 判断两种颜色是否相同
  */
 - (BOOL)equalTo:(UIColor *)color;
+/*
+ * 16进制字符串
+ */
++ (UIColor *)colorWithHex:(NSString *)hex;
 @end
