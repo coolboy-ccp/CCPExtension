@@ -44,4 +44,29 @@
     }
 }
 
+/*
+ * 添加下划线
+ * color 下划线颜色 默认和label同色
+ */
+- (void)underLine:(UIColor *)color {
+    if (color == nil) {
+        color = self.titleLabel.textColor;
+    }
+    NSDictionary *atd = @{NSUnderlineStyleAttributeName : @(NSUnderlineStyleSingle),NSUnderlineColorAttributeName:color};
+    NSMutableAttributedString *ats = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text attributes:atd];
+    self.titleLabel.attributedText = ats;
+}
+/*
+ * 添加中划线
+ * color 中划线颜色 默认和label同色
+ */
+- (void)middleLine:(UIColor *)color {
+    if (color == nil) {
+        color = self.titleLabel.textColor;
+    }
+    NSDictionary *atd = @{NSStrikethroughStyleAttributeName : @(NSUnderlineStyleSingle),NSUnderlineColorAttributeName:color};
+    NSMutableAttributedString *ats = [[NSMutableAttributedString alloc] initWithString:self.titleLabel.text attributes:atd];
+    self.titleLabel.attributedText = ats;
+}
+
 @end
