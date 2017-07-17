@@ -14,4 +14,12 @@
  * ps 用于网络上传
  */
 - (NSString *)base64By:(CGFloat)scale;
+/*
+ * 添加文字
+ */
+- (UIImage *)add_text:(NSString *)string attribute:(NSDictionary *)attribute frame:(CGRect)frame;
+/*
+ * 修改透明度
+ */
+- (UIImage *)change_alpha:(CGFloat)alpha;
 @end

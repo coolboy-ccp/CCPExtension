@@ -32,6 +32,20 @@
 }
 
 /*
+ * 根据条件去重
+ */
+- (NSArray *_Nonnull)removeDuplicate:(BOOL(^)(id obj))condition {
+    NSMutableArray *marr = [NSMutableArray array];
+    [self enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        BOOL cd = condition(obj);
+        if (cd) {
+            [marr addObject:obj];
+        }
+    }];
+    return marr.copy;
+}
+
+/*
  * 映射
  * ps 这个不知道有没有问题,目前项目中用到的都没有啥问题,求指点
  */

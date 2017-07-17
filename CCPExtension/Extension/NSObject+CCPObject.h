@@ -9,6 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (CCPObject)
+
+/*
+ * 创建一个弱引用的单例
+ */
++ (instancetype)share_obj;
 /*
  * 获得所有属性名称
  */
@@ -68,4 +73,8 @@
  * ps 交换方法
  */
 - (void)exchange_method:(SEL)os place:(SEL)ps;
+/*
+ * 跳转到设置界面
+ */
+- (void)skip_setting;
 @end

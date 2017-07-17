@@ -21,4 +21,5 @@
  */
 - (void)middleLine:(UIColor *)color;
 
+
 @end

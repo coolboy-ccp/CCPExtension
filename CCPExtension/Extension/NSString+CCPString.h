@@ -30,4 +30,5 @@
  * imgName 图片名称
  */
 - (NSMutableAttributedString *_Nonnull)ats:(NSString *_Nonnull)imgName;
+
 @end

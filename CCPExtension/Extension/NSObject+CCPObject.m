@@ -9,8 +9,24 @@
 #import "NSObject+CCPObject.h"
 #import <objc/runtime.h>
 #import "NSArray+CCPArray.h"
+#import "AppDelegate.h"
 
 @implementation NSObject (CCPObject)
+
+/*
+ * 创建一个弱引用的单例
+ */
++ (instancetype)share_obj {
+    static __weak NSObject *obj;
+    NSObject *strong_obj = obj;
+    @synchronized (self) {
+        if (strong_obj == nil) {
+            strong_obj = [NSObject new];
+            obj = strong_obj;
+        }
+    }
+    return strong_obj;
+}
 
 /*
  * 获得所有属性名称
@@ -212,6 +228,13 @@
         //ps和os交换实现
         method_exchangeImplementations(om, pm);
     }
+}
+
+/*
+ * 跳转到设置界面
+ */
+- (void)skip_setting {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
 }
 
 

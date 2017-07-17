@@ -159,6 +159,7 @@
 
 /*
  * 完全复制当前view
+ * 深拷贝
  */
 - (__kindof UIView *)copy {
     NSData *ach = [NSKeyedArchiver archivedDataWithRootObject:self];
@@ -178,6 +179,13 @@
     UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return img;
+}
+
+/*
+ * 让view显示在父视图中心
+ */
+- (void)toSupCenter {
+    self.center = [self convertPoint:self.center toView:self.superview];
 }
 
 @end
