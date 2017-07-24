@@ -54,4 +54,22 @@
     self.attributedText = ats;
 }
 
+
+/*
+ * 虚线边框
+ * color: 边框颜色 默认为红色
+ * corner: 边框圆角
+ */
+- (void)dotted_line_board:(UIColor *)color corner:(CGFloat)corner{
+    color = color?:[UIColor redColor];
+    self.layer.cornerRadius = corner;
+    self.clipsToBounds = YES;
+    CAShapeLayer *border = [CAShapeLayer layer];
+    border.strokeColor = color.CGColor;
+    border.fillColor = [UIColor clearColor].CGColor;
+    border.path = [UIBezierPath bezierPathWithRoundedRect:self.bounds cornerRadius:corner].CGPath;
+    border.lineWidth = 1.0;
+    border.lineDashPattern = @[@2,@1];
+    [self.layer addSublayer:border];
+}
 @end

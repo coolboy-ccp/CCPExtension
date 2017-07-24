@@ -181,11 +181,5 @@
     return img;
 }
 
-/*
- * 让view显示在父视图中心
- */
-- (void)toSupCenter {
-    self.center = [self convertPoint:self.center toView:self.superview];
-}
 
 @end

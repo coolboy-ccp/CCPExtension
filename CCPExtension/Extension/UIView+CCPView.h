@@ -54,9 +54,6 @@
  * frame 截图范围
  */
 - (UIImage *)renderImgIn:(CGRect)frame;
-/*
- * 让view显示在父视图中心
- */
-- (void)toSupCenter;
+
 
 @end

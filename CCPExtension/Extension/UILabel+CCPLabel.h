@@ -29,4 +29,10 @@
  * color 中划线颜色 默认和label同色
  */
 - (void)middleLine:(UIColor *)color;
+/*
+ * 虚线边框
+ * color: 边框颜色 默认为红色
+ * corner: 边框圆角
+ */
+- (void)dotted_line_board:(UIColor *)color corner:(CGFloat)corner;
 @end

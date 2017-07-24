@@ -59,5 +59,20 @@
 //当前系统语言
 #define current_language         [[NSLocale preferredLanguages] objectAtIndex:0]
 
+/*
+ * 快速单例
+ */
+#undef   singleton_def
+#define  singleton_def(__class) \
++ (__class *)shareInstance;
+
+#undef singleton_imp
+#define singleton_imp(__class) \
++ (__class *)shareInstance { \
+static dispatch_once_t once; \
+static __class *__singleton__; \
+dispatch_once(&once,^{__singleton__ = [[__class alloc] init];}); \
+return __singleton__; \
+}
 
 #endif /* SomeDefines_h */
