@@ -64,15 +64,17 @@
  */
 #undef   singleton_def
 #define  singleton_def(__class) \
-+ (__class *)shareInstance;
++ (__class *)shareInstance**__class;
 
 #undef singleton_imp
 #define singleton_imp(__class) \
-+ (__class *)shareInstance { \
++ (__class *)shareInstance##__class { \
 static dispatch_once_t once; \
 static __class *__singleton__; \
 dispatch_once(&once,^{__singleton__ = [[__class alloc] init];}); \
 return __singleton__; \
 }
+
+
 
 #endif /* SomeDefines_h */

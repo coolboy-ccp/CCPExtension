@@ -28,4 +28,9 @@
  */
 - (NSArray *_Nonnull)removeDuplicate:(BOOL(^_Nonnull)(id _Nonnull  obj))condition;
 
+/*
+ * 去除两个数组中相同元素
+ */
+- (NSArray *_Nonnull)removeDuplicateBy:(NSArray *_Nonnull)duplicate;
+
 @end

@@ -46,6 +46,14 @@
 }
 
 /*
+ * 去除两个数组中相同元素
+ */
+- (NSArray *_Nonnull)removeDuplicateBy:(NSArray *_Nonnull)duplicate {
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"NOT (SELF IN %@)",duplicate];
+    return [self filteredArrayUsingPredicate:predicate];
+}
+
+/*
  * 映射
  * ps 这个不知道有没有问题,目前项目中用到的都没有啥问题,求指点
  */
